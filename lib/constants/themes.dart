@@ -31,4 +31,6 @@ class AppTheme {
     fontSize: 16,
     fontWeight: FontWeight.bold,
   );
+  static const KtextStyle =
+      TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w400);
 }
