@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_ecommerce/constants/themes.dart';
+import 'package:flutter_ecommerce/views/updatekyc.dart';
 
 class Personal extends StatelessWidget {
   const Personal({super.key});
@@ -93,6 +94,20 @@ class Personal extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => UpdateKYC()));
+        },
+        label: Text(
+          'Update KYC',
+          style: TextStyle(color: Colors.white),
+        ),
+        icon: Icon(Icons.tips_and_updates),
+        tooltip: 'Update KYC',
+        backgroundColor: Colors.green,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
