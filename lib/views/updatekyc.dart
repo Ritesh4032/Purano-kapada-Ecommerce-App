@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/constants/themes.dart';
+import 'package:flutter_ecommerce/views/MarriedDeatails.dart';
 
 class UpdateKYC extends StatefulWidget {
   const UpdateKYC({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _UpdateKYCState extends State<UpdateKYC> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: kdarkColor,
       appBar: AppBar(
         backgroundColor: kdarkColor,
         title: Text(
@@ -90,38 +91,6 @@ class _UpdateKYCState extends State<UpdateKYC> {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class MarriedDetails extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Occupation',
-              style: TextStyle(
-                color: kWhiteColor,
-                fontSize: 17,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            TextFormField(),
-            SizedBox(height: 20),
-            Text(
-              'Marital Status',
-              style: TextStyle(color: Colors.white),
-            ),
-            // Add your married details UI here
-          ],
-        ),
       ),
     );
   }
